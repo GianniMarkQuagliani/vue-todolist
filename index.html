@@ -43,7 +43,7 @@
             <button @click="addTask">Aggiungi</button>
 
             <!-- Messaggio di errore se il task ha meno di 5 caratteri -->
-            <p class="error">Il nuovo task deve avere almeno 5 caratteri</p>
+            <p class="error" v-if="isError">Il nuovo task deve avere almeno 5 caratteri</p>
         </div>
 
 

@@ -27,6 +27,15 @@ createApp({
                 this.isError = false;
             }
         },
+        removeTask(index) {
+            if (this.tasks[index].done) {
+                // Milestone 2: Rimuovi il task solo se è stato completato
+                this.tasks.splice(index, 1);
+            } else {
+                // Milestone 3 Bonus: Messaggio di errore se il task non è stato completato
+                this.tasks[index].isError = true;
+            }
+        },
 
         
         

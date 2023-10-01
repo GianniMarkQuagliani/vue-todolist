@@ -35,6 +35,13 @@ createApp({
                 // Milestone 3 Bonus: Messaggio di errore se il task non è stato completato
                 this.tasks[index].isError = true;
             }
+        },
+
+        toggleDone(index) {
+            // Milestone 2: Inverti lo stato 'done' del task
+            this.tasks[index].done = !this.tasks[index].done;
+            // Milestone 2: Resetta l'errore se era stato visualizzato
+            this.tasks[index].isError = false;
         }
         
         

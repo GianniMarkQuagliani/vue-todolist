@@ -55,6 +55,7 @@
                 <li v-for="(task, index) in tasks" :key="index">
                     <span
                     :class="{ 'task-done': task.done }"
+                    @click="toggleDone(index)"
                     @dblclick="removeTask(index)"
                     >
                         <!-- Utilizzo di v-if/v-else per condizionare la visualizzazione -->

@@ -53,7 +53,7 @@ body {
 
 /* Stile per il contenitore dei task */
 .task-container {
-    background-color: blue;
+    background-color: rgb(170, 170, 173);
     border-radius: 10px;
     margin-top: 40px;
     padding: 20px;
@@ -73,7 +73,7 @@ body {
 
 /* Stile al passaggio del mouse sugli elementi della lista */
 .task-container li:hover {
-    background-color: red;
+    background-color: rgb(237, 235, 235);
 }
 
 /* Stile per le icone "trash" all'interno degli elementi della lista */
@@ -85,10 +85,11 @@ body {
 
 /* Stile al passaggio del mouse sulle icone "trash" */
 .task-container li i:hover {
-    color: red;
+    color: rgb(13, 0, 0);
 }
 
 /* Stile per testo barrato */
 .task-done {
     text-decoration: line-through;
+    color: red;
 }

@@ -26,10 +26,12 @@ body {
 }
 
 /* Stile del logo */
-.logo {
-    margin: 0 auto;
-    width: 300px;
-    margin-bottom: 10px;
+.logo{
+    width: 350px;
+}
+
+.logo img{
+    width: 100%;
 }
 
 /* Stile per la sezione di inserimento di nuovi task */

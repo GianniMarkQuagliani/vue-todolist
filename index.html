@@ -52,11 +52,13 @@
 
             <!-- Lista dei task -->
             <ul v-if="tasks.length > 0">
-                <li v-for="(task, index) in tasks" :key="index">
+                <li v-for="(task, index) in tasks" :key="index"
+                @click="toggleDone(index)"
+                @dblclick="removeTask(index)"
+                >
                     <span
                     :class="{ 'task-done': task.done }"
-                    @click="toggleDone(index)"
-                    @dblclick="removeTask(index)"
+                    
                     >
                         <!-- Utilizzo di v-if/v-else per condizionare la visualizzazione -->
                         <del v-if="task.done">{{ task.text }}</del>

@@ -1,6 +1,6 @@
 # Vue To Do List
-- Creo una struttura HTML e CSS
-- Inizializzo vue
-- Creo un'array di task iniziale con testi
-- Creo un metodo per aggiungere un nuovo task
-- Aggiungo un metodo per rimuovere un task
+1) Creo una struttura HTML e CSS
+2) Inizializzo vue
+3) Creo un'array di task iniziale con testi
+4) Creo un metodo per aggiungere un nuovo task
+5) Aggiungo un metodo per rimuovere un task

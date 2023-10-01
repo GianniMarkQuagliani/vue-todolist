@@ -23,12 +23,49 @@
 </head>
 <body>
 
-    <!-- App -->
+    <!-- Contenitore principale dell'app Vue -->
     <div id="app" class="container">
         <!-- Logo -->
         <div class="logo">
             <img src="logo.png" alt=" Logo ">
         </div>
+
+
+        <!-- Sezione per aggiungere nuovi task -->
+        <div class="new-task">
+            <!-- Input per inserire nuovi task -->
+            <input type="text" placeholder="Nuova task">
+            <!-- Pulsante per aggiungere nuovi task -->
+            <button>Aggiungi</button>
+
+            <!-- Messaggio di errore se il task ha meno di 5 caratteri -->
+            <p class="error">Il nuovo task deve avere almeno 5 caratteri</p>
+        </div>
+
+
+        <!-- Sezione per visualizzare i task -->
+        <div class="task-container">
+
+            <!-- Lista dei task -->
+            <ul>
+                <li>
+                    <!-- Elemento della lista con il testo del task -->
+                    <span>
+                        <!-- Testo del task con la possibilità di barrarlo se completato -->
+                        <del></del> <!-- Utilizzo di <del> per barrare il testo -->
+                        <span></span> <!-- Testo del task -->
+                    </span>
+                    <!-- Icona "trash" per rimuovere il task -->
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+                    <!-- Messaggio di errore se si cerca di rimuovere un task non completato -->
+                    <p class="error">Completa prima il task prima di rimuoverlo.</p>
+                </li>
+            </ul>
+
+            <!-- Messaggio di errore se si cerca di rimuovere un task non completato -->
+            <h3>Non ci sono task</h3>
+        </div>
+        
     </div>
     
     <!-- JS -->

@@ -1,32 +1,94 @@
 /* Reset */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Google Fonts */
-body{
+/* Stile del testo del corpo della pagina */
+body {
     font-family: 'Fredoka', sans-serif;
     font-family: 'Inconsolata', monospace;
     font-family: 'Lato', sans-serif;
     font-family: 'Rubik Mono One', sans-serif;
 }
 
-/* Container principale */
-.container{
+/* Impostazioni per il contenitore principale */
+.container {
     width: 70%;
     margin: 0 auto;
 }
 
-/* Stile immagini */
-img{
-    width: 100%;
+/* Stile per i messaggi di errore */
+.error {
+    color: red;
+    font-size: 0.9rem;
 }
 
-/* Logo */
-.logo{
+/* Stile del logo */
+.logo {
     margin: 0 auto;
     width: 300px;
     margin-bottom: 10px;
+}
+
+/* Stile per la sezione di inserimento di nuovi task */
+.new-task {
+    text-align: center;
+}
+
+/* Stile per gli input e i pulsanti all'interno della sezione di inserimento */
+.new-task input,
+.new-task button {
+    border-radius: 10px;
+    padding: 10px 15px;
+    border-width: 1px;
+}
+
+.new-task input,
+.new-task button {
+    padding: 10px;
+    margin-right: 15px;
+}
+
+/* Stile per il contenitore dei task */
+.task-container {
+    background-color: blue;
+    border-radius: 10px;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+/* Stile per le liste non ordinate */
+.task-container ul {
+    list-style: none;
+}
+
+/* Stile per gli elementi della lista dei task */
+.task-container li {
+    line-height: 40px;
+    border-bottom: 1px solid lightgray;
+    padding: 0 15px;
+}
+
+/* Stile al passaggio del mouse sugli elementi della lista */
+.task-container li:hover {
+    background-color: red;
+}
+
+/* Stile per le icone "trash" all'interno degli elementi della lista */
+.task-container li i {
+    line-height: 40px;
+    float: right;
+    cursor: pointer;
+}
+
+/* Stile al passaggio del mouse sulle icone "trash" */
+.task-container li i:hover {
+    color: red;
+}
+
+/* Stile per testo barrato */
+.task-done {
+    text-decoration: line-through;
 }

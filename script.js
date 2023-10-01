@@ -4,9 +4,9 @@ createApp({
     data() {
         return {
             tasks: [
-                { text: 'Fare la spesa', isError: false },
-                { text: 'Studiare Vue',  isError: false },
-                { text: 'Comprare la pappa di Artu', isError: false }
+                { text: 'Fare la spesa', done: false, isError: false },
+                { text: 'Studiare Vue', done: false, isError: false },
+                { text: 'Comprare la pappa di Artu', done: false, isError: false }
             ],
             newTask: '',
             isError: false
@@ -35,8 +35,7 @@ createApp({
                 // Milestone 3 Bonus: Messaggio di errore se il task non è stato completato
                 this.tasks[index].isError = true;
             }
-        },
-
+        }
         
         
     }
